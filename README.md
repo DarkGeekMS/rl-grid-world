@@ -8,6 +8,8 @@ This repository is for _Machine Intelligence_ assignment (5).
 
 -   Assignment (2) : [Chapters Summary](https://docs.google.com/document/d/1isPX5uW0txhRuZPqpCPahuLlHVI1IosaTdhfG3oPleQ/edit?usp=sharing)
 
+-   Assignment (2) : [Chapter 13 Summary](https://drive.google.com/file/d/1QZVbKlP5OL-xZ5IBP8tr_hPJTe-GEJgS/view?usp=sharing)
+
 -   Assignment (3) : [Chapters Slides](https://docs.google.com/presentation/d/1Vj5UjlG54gUAYWvIfGYrcZXHnhYQJJez0_B1wNvW3lE/edit?usp=sharing)
 
 -   Assignment (4) : [Selected Papers Summary](https://docs.google.com/document/d/1huFa2wKRn6V-K3fm3VJpNsxcoUnh19sNAXTix1c-SzU/edit?usp=sharing)
