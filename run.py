@@ -26,8 +26,8 @@ if __name__ == '__main__':
     # parse arugments
     if len(sys.argv) != 4:
         exit(-1)
-    agent = sys.argv[1]
-    grid = sys.argv[2]
+    agent = int(sys.argv[1])
+    grid = int(sys.argv[2])
     policy_file = sys.argv[3]
     # read policy from file
     policy = list()
