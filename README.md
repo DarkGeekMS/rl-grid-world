@@ -10,6 +10,15 @@ A college project for _Machine Intelligence_ course. Exploring __Reinforcement L
     -   Using tabular representation.
     -   Using simple function approximator (shown in equation _21.10_ in reference).
 
+## Usage
+
+-   Update policies within text files in `policies` folder.
+
+-   Run the direct utility estimation (using a specific representation on a specific grid) :
+    ```bash
+    python run.py <agent_number> <grid_number> <path/to/policy/text/file>
+    ```
+
 ## Assignment 4
 
 -   Document : [Selected Papers Summary](https://docs.google.com/document/d/1huFa2wKRn6V-K3fm3VJpNsxcoUnh19sNAXTix1c-SzU/edit?usp=sharing)
