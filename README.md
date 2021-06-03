@@ -12,7 +12,7 @@ A college project for _Machine Intelligence_ course. Exploring __Reinforcement L
 
 ## Usage
 
--   Update policies within text files in `policies` folder.
+-   Update policies within text files in `policies` folder. Text files are named after the numbers of the corresponding grid worlds.
 
 -   Run the direct utility estimation (using a specific representation on a specific grid) :
     ```bash
