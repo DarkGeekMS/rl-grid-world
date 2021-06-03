@@ -42,21 +42,22 @@ def solve_fa(grid, terminals, policy):
         # update parameters using gradient descent
         params_set = update_params(U, params_set)
     # print elapsed time by agent
-    print("### Agent Elapsed Time ###")
+    print("\n### Agent Elapsed Time ###\n")
     print(f"Elapsed Time = {time.time() - start_time} seconds")
     # print out estimated function parameters
-    print("\n### Function Parameters ###")
+    print("\n### Function Parameters ###\n")
     print("theta_0 = ", params_set[0])
     print("theta_1 = ", params_set[1])
     print("theta_2 = ", params_set[2])
     # print out estimated utilities
-    print("\n### Estimated Utilities ###")
+    print("\n### Estimated Utilities ###\n")
     for y in range(grid.shape[0]):
-        row = ""
+        row = "| "
         for x in range(grid.shape[1]):
             if grid[y, x]:
                 util = params_set[0] + x * params_set[1] + y * params_set[2]
-                row += (str(round(util, 3)) + " ")
+                row += (str(format(round(util, 3), '.3f')) + " | ")
             else:
-                row += "None "
+                row += "None | "
         print(row)
+        print("-"*(len(row)-1))

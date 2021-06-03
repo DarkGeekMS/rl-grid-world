@@ -62,15 +62,16 @@ def solve_tabular(grid, terminals, policy):
         # update utility table
         util_table = update_util_table(U2, util_table)
     # print elapsed time by agent
-    print("### Agent Elapsed Time ###")
+    print("\n### Agent Elapsed Time ###\n")
     print(f"Elapsed Time = {time.time() - start_time} seconds")
     # print estimated utility table
-    print("\n### Estimated Utilities Table ###")
+    print("\n### Estimated Utilities Table ###\n")
     for y in range(util_table.shape[0]):
-        row = ""
+        row = "| "
         for x in range(util_table.shape[1]):
             if util_table[y, x]:
-                row += str(round(util_table[y, x], 3)) + " "
+                row += str(format(round(util_table[y, x], 3), '.3f')) + " | "
             else:
-                row += "None "
+                row += "None | "
         print(row)
+        print("-"*(len(row)-1))
