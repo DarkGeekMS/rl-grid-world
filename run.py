@@ -25,6 +25,7 @@ def run(agent, grid, policy):
 if __name__ == '__main__':
     # parse arugments
     if len(sys.argv) != 4:
+        print("Enter complete set of arguments !")
         exit(-1)
     agent = int(sys.argv[1])
     grid = int(sys.argv[2])
