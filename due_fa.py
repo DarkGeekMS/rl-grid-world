@@ -1,5 +1,6 @@
 """ Solves Direct Utility Estimation (DUE) Using Function Approximation (FA) """
 
+import time
 import random
 from utils import perform_single_trial
 
@@ -30,6 +31,8 @@ def update_params(trial_results, prev_params):
 
 def solve_fa(grid, terminals, policy):
     # solve direct utility estimation using function approximation
+    # initialize timer
+    start_time = time.time()
     # randomly initialize parameters list (uniform)
     params_set = (random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1))
     # loop for a large number of trials
@@ -38,8 +41,11 @@ def solve_fa(grid, terminals, policy):
         U = perform_single_trial(grid, terminals, policy)
         # update parameters using gradient descent
         params_set = update_params(U, params_set)
+    # print elapsed time by agent
+    print("### Agent Elapsed Time ###")
+    print(f"Elapsed Time = {time.time() - start_time} seconds")
     # print out estimated function parameters
-    print("### Function Parameters ###")
+    print("\n### Function Parameters ###")
     print("theta_0 = ", params_set[0])
     print("theta_1 = ", params_set[1])
     print("theta_2 = ", params_set[2])

@@ -1,5 +1,6 @@
 """ Solves Direct Utility Estimation (DUE) Using Tabular Representation """
 
+import time
 import numpy as np
 from utils import perform_single_trial
 
@@ -48,6 +49,8 @@ def update_util_table(trial_results, util_table):
 
 def solve_tabular(grid, terminals, policy):
     # solve direct utility estimation using tabular representation
+    # initialize timer
+    start_time = time.time()
     # intialize whole utility table with None
     util_table = np.full(grid.shape,  None)
     # loop for a large number of trials
@@ -58,8 +61,11 @@ def solve_tabular(grid, terminals, policy):
         U2 = summarize_trial(U)
         # update utility table
         util_table = update_util_table(U2, util_table)
+    # print elapsed time by agent
+    print("### Agent Elapsed Time ###")
+    print(f"Elapsed Time = {time.time() - start_time} seconds")
     # print estimated utility table
-    print("### Estimated Utilities Table ###")
+    print("\n### Estimated Utilities Table ###")
     for y in range(util_table.shape[0]):
         row = ""
         for x in range(util_table.shape[1]):
