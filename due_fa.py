@@ -4,7 +4,7 @@ import random
 from utils import perform_single_trial
 
 
-# define learning rate constant
+# define constants
 LR = 0.001
 TRIALS_COUNT = 10000
 
