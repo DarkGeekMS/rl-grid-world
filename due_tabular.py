@@ -63,5 +63,8 @@ def solve_tabular(grid, terminals, policy):
     for y in range(util_table.shape[0]):
         row = ""
         for x in range(util_table.shape[1]):
-            row += str(util_table[y, x]) + " "
+            if util_table[y, x]:
+                row += str(round(util_table[y, x], 3)) + " "
+            else:
+                row += "None "
         print(row)
