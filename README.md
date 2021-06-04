@@ -18,12 +18,3 @@ A college project for _Machine Intelligence_ course. Exploring __Reinforcement L
     ```bash
     python run.py <agent_number> <grid_number> <path/to/policy/text/file>
     ```
-
-## Assignment 4
-
--   Document : [Selected Papers Summary](https://docs.google.com/document/d/1huFa2wKRn6V-K3fm3VJpNsxcoUnh19sNAXTix1c-SzU/edit?usp=sharing)
-
--   Selected Papers :
-    -   [Discovering Reinforcement Learning Algorithms](https://proceedings.neurips.cc/paper/2020/file/0b96d81f0494fde5428c7aea243c9157-Paper.pdf), DeepMind, NeurIPS 2020
-
-    -   [Robust Multi-Agent Reinforcement Learning with Model Uncertainty](https://proceedings.neurips.cc/paper/2020/file/774412967f19ea61d448977ad9749078-Paper.pdf), AWS, NeurIPS 2020
